@@ -10,22 +10,22 @@
       scroll-behavior: smooth;
     }
 
-    body {
+  body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: #f4f4f4;
       color: #333;
     }
 
-    header {
-      background: #2c3e50;
+  header {
+     background: #2c3e50;
       color: white;
       padding: 2rem;
       text-align: center;
       animation: fadeDown 1s ease-in-out;
     }
 
-    nav {
+  nav {
       background: #1a252f;
       display: flex;
       justify-content: center;
@@ -33,17 +33,17 @@
       padding: 0.8rem 0;
     }
 
-    nav a {
+   nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
 
-    nav a:hover {
+   nav a:hover {
       text-decoration: underline;
     }
 
-    main {
+   main {
       padding: 2rem;
       max-width: 900px;
       margin: auto;
@@ -53,27 +53,27 @@
       animation: fadeUp 1.2s ease;
     }
 
-    h1, h2 {
+  h1, h2 {
       color: #2c3e50;
     }
 
-    section {
+  section {
       margin-bottom: 3rem;
       opacity: 0;
       transform: translateY(40px);
       animation: slideUp 1s forwards;
     }
 
-    section:nth-child(2) { animation-delay: 0.4s; }
+  section:nth-child(2) { animation-delay: 0.4s; }
     section:nth-child(3) { animation-delay: 0.6s; }
     section:nth-child(4) { animation-delay: 0.8s; }
     section:nth-child(5) { animation-delay: 1s; }
 
-    ul {
+   ul {
       padding-left: 1.2rem;
     }
 
-    footer {
+   footer {
       text-align: center;
       padding: 1.5rem;
       background: #2c3e50;
@@ -82,13 +82,13 @@
       animation: fadeUp 1.5s ease-in;
     }
 
-    .gallery {
+  .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1rem;
     }
 
-    .gallery img {
+  .gallery img {
       width: 100%;
       height: 180px;
       object-fit: cover;
@@ -96,11 +96,11 @@
       transition: transform 0.3s;
     }
 
-    .gallery img:hover {
+  .gallery img:hover {
       transform: scale(1.05);
     }
 
-    .btn {
+  .btn {
       display: inline-block;
       padding: 0.8rem 1.5rem;
       background: #2980b9;
@@ -111,23 +111,23 @@
       transition: background 0.3s;
     }
 
-    .btn:hover {
+  .btn:hover {
       background: #1c5e8a;
     }
 
-    @keyframes slideUp {
+   @keyframes slideUp {
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
 
-    @keyframes fadeDown {
+  @keyframes fadeDown {
       0% { opacity: 0; transform: translateY(-30px); }
       100% { opacity: 1; transform: translateY(0); }
     }
 
-    @keyframes fadeUp {
+  @keyframes fadeUp {
       0% { opacity: 0; transform: translateY(30px); }
       100% { opacity: 1; transform: translateY(0); }
     }
@@ -155,28 +155,28 @@
       <a class="btn" href="CV-RegaArmanMulyana.pdf" download>📄 Unduh CV</a>
     </section>
 
-    <section id="keahlian">
-      <h2>Keahlian & Software</h2>
+  <section id="keahlian">
+  <h2>Keahlian & Software</h2>
       <ul>
-        <li>Drafting Electrical System (AutoCAD)</li>
-        <li>BIM Electrical Modeling (Revit)</li>
-        <li>Clash Detection (Navisworks)</li>
-        <li>Load Calculation & Panel Schedule</li>
-        <li>Dokumentasi Shop Drawing & As-Built</li>
-      </ul>
-    </section>
+  <li>Drafting Electrical System (AutoCAD)</li>
+  <li>BIM Electrical Modeling (Revit)</li>
+  <li>Clash Detection (Navisworks)</li>
+  <li>Load Calculation & Panel Schedule</li>
+  <li>Dokumentasi Shop Drawing & As-Built</li>
+  </ul>
+  </section>
 
-    <section id="proyek">
+  <section id="proyek">
       <h2>Galeri Proyek</h2>
       <div class="gallery">
-        <img src="https://via.placeholder.com/400x300?text=Proyek+1" alt="Proyek 1">
-        <img src="https://via.placeholder.com/400x300?text=Proyek+2" alt="Proyek 2">
-        <img src="https://via.placeholder.com/400x300?text=Proyek+3" alt="Proyek 3">
-        <img src="https://via.placeholder.com/400x300?text=Proyek+4" alt="Proyek 4">
-      </div>
-    </section>
+  <img src="https://via.placeholder.com/400x300?text=Proyek+1" alt="Proyek 1">
+  <img src="https://via.placeholder.com/400x300?text=Proyek+2" alt="Proyek 2">
+  <img src="https://via.placeholder.com/400x300?text=Proyek+3" alt="Proyek 3">
+  <img src="https://via.placeholder.com/400x300?text=Proyek+4" alt="Proyek 4">
+  </div>
+  </section>
 
-    <section id="kontak">
+  <section id="kontak">
       <h2>Kontak</h2>
       <p>Email: rega@example.com</p>
       <p>LinkedIn: <a href="#">linkedin.com/in/regaarman</a></p>
