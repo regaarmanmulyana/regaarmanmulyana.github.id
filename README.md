@@ -1,32 +1,190 @@
-  <head>
-    <h2>Tentang Saya</h2>
-    <p>Halo! Saya Rega Arman Mulyana, seorang Drafter dan BIM Electrical Modeler yang berpengalaman dalam merancang dan memodelkan sistem kelistrikan untuk proyek konstruksi skala kecil hingga besar.
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Rega Arman Mulyana</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
 
-Saya memiliki keahlian dalam membuat gambar teknis yang presisi menggunakan AutoCAD, serta membangun model 3D yang detail dan terkoordinasi menggunakan Revit BIM. Dengan pemahaman yang kuat terhadap standar kelistrikan dan koordinasi lintas disiplin, saya berkomitmen untuk memberikan hasil kerja yang akurat, efisien, dan siap digunakan di lapangan.
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
 
-Saya percaya bahwa teknologi seperti BIM bukan hanya alat bantu visual, tetapi juga kunci dalam meningkatkan kolaborasi, akurasi, dan efisiensi proyek dari awal hingga akhir.</p>
-  </section>
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeDown 1s ease-in-out;
+    }
 
-  <section>
-    <h2>Projek Saya</h2>
-    <div class="project">
-      <h3>Desain Kamar Minimalis</h3>
-      <p>Projek desain kamar tidur dengan nuansa modern.</p>
-    </div>
-    <div class="project">
-      <h3>Website Cafe Kopi</h3>
-      <p>Website sederhana untuk cafe dengan fitur menu dan kontak.</p>
-    </div>
-  </section>
+    nav {
+      background: #1a252f;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.8rem 0;
+    }
 
-  <section>
-    <h2>Kontak</h2>
-    <p>Email: <a href="mailto:regaarmanmulyana@gmail.com">regaarmanmulyana@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/rgaarmn_23" target="_blank">@rgaarmn_23</a></p>
-  </section>
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      animation: fadeUp 1.2s ease;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: slideUp 1s forwards;
+    }
+
+    section:nth-child(2) { animation-delay: 0.4s; }
+    section:nth-child(3) { animation-delay: 0.6s; }
+    section:nth-child(4) { animation-delay: 0.8s; }
+    section:nth-child(5) { animation-delay: 1s; }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #2c3e50;
+      color: white;
+      margin-top: 3rem;
+      animation: fadeUp 1.5s ease-in;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: #2980b9;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #1c5e8a;
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rega Arman Mulyana</h1>
+    <p>Drafter & BIM Electrical Modeler</p>
+  </header>
+
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#keahlian">Keahlian</a>
+    <a href="#proyek">Proyek</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <main>
+    <section id="tentang">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya adalah Drafter dan BIM Electrical Modeler yang berpengalaman dalam perancangan sistem kelistrikan untuk proyek konstruksi. Terampil dalam AutoCAD dan Revit, saya fokus pada akurasi teknis dan efisiensi kerja dengan koordinasi lintas disiplin.
+      </p>
+      <a class="btn" href="CV-RegaArmanMulyana.pdf" download>📄 Unduh CV</a>
+    </section>
+
+    <section id="keahlian">
+      <h2>Keahlian & Software</h2>
+      <ul>
+        <li>Drafting Electrical System (AutoCAD)</li>
+        <li>BIM Electrical Modeling (Revit)</li>
+        <li>Clash Detection (Navisworks)</li>
+        <li>Load Calculation & Panel Schedule</li>
+        <li>Dokumentasi Shop Drawing & As-Built</li>
+      </ul>
+    </section>
+
+    <section id="proyek">
+      <h2>Galeri Proyek</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/400x300?text=Proyek+1" alt="Proyek 1">
+        <img src="https://via.placeholder.com/400x300?text=Proyek+2" alt="Proyek 2">
+        <img src="https://via.placeholder.com/400x300?text=Proyek+3" alt="Proyek 3">
+        <img src="https://via.placeholder.com/400x300?text=Proyek+4" alt="Proyek 4">
+      </div>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <p>Email: rega@example.com</p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/regaarman</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Rega Arman Mulyana</p>
+    &copy; 2025 Rega Arman Mulyana | Portofolio Pribadi
   </footer>
-
 </body>
+</html>
